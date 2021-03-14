@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>■ 체크박스 입력 ■</p>
+    <label
+      >blue<input type="checkbox" name="check_color" value="blue" checked
+    /></label>
+    <label>red<input type="checkbox" name="check_color" value="red" /></label>
+    <p>■ 버튼 종류 ■</p>
+    <input type="submit" class="ex" id="submit" value="제출하기" />
+    <button class="ex" id="btn">버튼클릭</button>
+
+    <p>■ 동영상 ■</p>
+    <video class="ex" id="video" autoplay controls>
+      <source src="Mountains - 61818.mp4" />
+    </video>
+    <p>■ 텍스트입력 ■</p>
+    <input type="text" class="ex" id="text" placeholder="글을 입력하세요" />
+
+    <p>■ 날짜입력 ■</p>
+    <input type="date" class="ex" id="date" min="2020-05-04" max="2021-03-14" />
+    <p>■ 파일선택 ■</p>
+    <input type="file" class="ex" id="file" />
+    <p>■ 비밀번호입력 ■</p>
+    <input type="password" class="ex" id="password" maxlength="7" />
+
+    <form action="ReceivePage.do" method="POST">
+      <p>■ 라디오버튼 & form 태그 ■</p>
+      <input type="radio" class="ex" id="radio" name="radio1" value="쑥" />쑥
+      <input type="radio" class="ex" id="radio" name="radio" value="달래" />달래
+      <input
+        type="radio"
+        class="ex"
+        id="radio"
+        name="radio"
+        value="미나리"
+      />미나리
+      <p></p>
+      <input type="submit" value="제출하기이이" />
+    </form>
+    <p>■ 전화번호 ■</p>
+    <input type="tel" class="ex" id="phone1" placeholder="010" maxlength="3" />
+    <input type="tel" class="ex" id="phone2" placeholder="1111" maxlength="4" />
+    <input type="tel" class="ex" id="phone3" placeholder="1111" maxlength="4" />
+    <p>■ Quantity between 1 and 16 ■</p>
+    <input type="number" class="ex" id="number" min="1" max="16" step="3" />
+  </body>
+</html>
